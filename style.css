@@ -1,0 +1,45 @@
+body{
+  background-image: url("playground.jpg");
+  background-size: cover;
+}
+div{
+  width:100px;
+  height:100px;
+  position: relative;
+  border-radius: 50px;
+  background-color: red;
+  animation: horizontal 10s infinite;
+}
+h1{
+  text-align: center;
+  animation: rotate 4s infinite;
+  color:red;
+}
+@keyframes horizontal{
+  0%{left: 0px;
+      top:0px;}
+  10%{left: 100px;
+      top:500px;}
+  20%{left:200px;
+    top:50px;}
+  30%{left:300px;
+      top:500px;}
+  40%{left:400px;
+      top:100px;}
+  50%{left:500px;
+      top:500px;}
+  60%{left:600px;
+      top:150px;}
+  70%{left:700px;
+      top:500px;}
+  80%{left:800px;
+      top: 200px;}
+  90%{left:900px;
+      top:500px;}              
+  100%{left: 100px;
+        top:250px;}
+}
+@keyframes rotate{
+  from{ transform: rotate (0deg);}
+  to{transform: rotate(360deg);}
+}
